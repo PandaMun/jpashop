@@ -4,5 +4,5 @@
 
 ### 1. 도메인 설계
 - 도메인 모델
-  - [domain Model](./img/domain Model.png)
+  ![domain](./img/domain_model.png)
   - 여기서 Category 엔티티와 Item 엔티티 사이에 CategoryItem이라는 category_item_id 라는 키값을 가지고 있는 엔티티를 생성해 다대다 관계를 다대일 일대다 관계로 풀어냈습니다.
