@@ -19,9 +19,6 @@ public class Category {
 
     private String name;
 
-    @OneToMany(mappedBy = "category")
-    private List<CategoryItem> categoryItems = new ArrayList<>();
-
     @ManyToOne(fetch = LAZY)
     @JoinColumn(name = "parent_id")
     private Category parent;

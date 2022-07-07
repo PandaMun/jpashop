@@ -12,7 +12,7 @@ import java.util.List;
 public class ItemRepository {
 
     private final EntityManager em;
-
+ 
     public void save(Item item){
         if (item.getId() == null){
             em.persist(item); //신규

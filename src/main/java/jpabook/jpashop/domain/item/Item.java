@@ -37,7 +37,7 @@ public abstract class Item {
     /**
      * stock 증가
      */
-    public void removeStcok(int quantity) {
+    public void removeStock(int quantity) {
         int restStock = this.stockQuantity - quantity;
         if (restStock < 0){
             throw new NotEnoughStcokException("need more stock");
