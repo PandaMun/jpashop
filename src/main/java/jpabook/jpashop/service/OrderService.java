@@ -56,11 +56,17 @@ public class OrderService {
         // 주문 엔티티 조회
         Order order = orderRepository.findOne(orderId);
         // 주문 취소
+        /*
+        JPA의 장점
+        cancel메서드에서 타고 올라간 모든 데이터 변경 사항을
+        JPA(Dirty checking)되어 알아서 변경 쿼리가 날라감
+         */
         order.cancel();
     }
-
-    //검색
-    public List<Order> findOrders(OrderSearch orderSearch){
-        return orderRepository.findAll(orderSearch);
-    }
+    /**
+     * 주문 검색
+     */
+//    public List<Order> findOrders(OrderSearch orderSearch){
+//        return orderRepository.findAll(orderSearch);
+//    }
 }
